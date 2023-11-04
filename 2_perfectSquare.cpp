@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-
+#define ll long long
 // check the perfect square
 bool perfectSquare(int n)
 {
