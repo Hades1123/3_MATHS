@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// check Prime number
 bool isPrime(int n)
 {
     for (int i = 2; i*i <= n; i++)
@@ -9,6 +10,7 @@ bool isPrime(int n)
             return false;
     return n > 1;
 }
+
 int main()
 {
     int n; cin >> n;
