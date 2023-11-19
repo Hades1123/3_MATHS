@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>// bai nay nen dung vector
 #include<iomanip>
 #include<cstring>
 #define ll long long
@@ -35,42 +35,39 @@ int main()
 
     return 0;
 }
-
-// #include <bits/stdc++.h>
-// using namespace std;
+//Bai nay dung vector hay hon
+// Khong dung boost
 // #include <iostream>
 // #include <vector>
-// #include <cmath>
-
-// vector<bool> sang_nt(int n)
+// using namespace std;
+// vector<bool> isPrime(int n)
 // {
-//     n += 3;
-//     vector<bool> f(n+1,true);
-//     f[1] = f[0] = false;
-//     f[2] = true;
-//     for (int i = 2; i <= sqrt(n); i ++)
+//     n+=1;
+//     vector<bool> v(n,true);
+//     v[1] = v[0] = false;
+//     for (int i = 2; i*i <= n;  ++i)
 //     {
-//         if (f[i])
+//         if (v[i])
 //         {
-//             for (int p = i * i; p <= n; p += i) f[p] = false;
-
+//             for (int j = i * i; j <= n; j += i)
+//                 v[j] = false;
 //         }
 //     }
-//     return f;
+//     return v;
 // }
 // int main()
 // {
 //     int n, k;
 //     cin >> n >> k;
-//     vector<bool> f = sang_nt(n);
-//     int res = 0;
-//     for (int i = 2; i <= n - k; ++i)
+//     vector<bool> v = isPrime(n);
+//     int cnt = 0;
+//     for (int i = 2; i + k <= n; ++i)
 //     {
-//         if (f[i] && f[i + k])
+//         if (v[i] && v[i + k])
 //         {
-//             res++;
+//             ++cnt;
 //         }
 //     }
-//     cout << res << endl;
+//     cout << cnt << endl;
 //     return 0;
 // }
