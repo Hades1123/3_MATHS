@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h>//sieve of eratosthene
 using namespace std;
 
 #define BOOST ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
@@ -16,7 +16,7 @@ int main()
     {
         if (Prime[i] == true)
         {
-            for (int j = i*2; j <= n ; j+=i)
+            for (int j = i*i; j <= n ; j+=i)
                 Prime[j] = false;
         }
     }
