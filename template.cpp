@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     BOOST
-
+    
 
     return 0;
 }
