@@ -25,11 +25,10 @@ int main()
     }
 
     int cnt = 0;
-    for (int i = 2 ; i < n; ++i)
+    for (int i = 2 ; i <= n -k; ++i)
     {
-        if (i + k <= n)
-            if (Prime[i] && Prime[i+k])
-                ++cnt;
+        if (Prime[i] && Prime[i+k])
+            ++cnt;  
     }
     cout << cnt;
 
