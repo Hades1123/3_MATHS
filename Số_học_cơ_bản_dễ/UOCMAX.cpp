@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>// dung ki thuat phan tich thua so nguyen to
 #include<iomanip>
 
 #define ll long long
