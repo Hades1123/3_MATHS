@@ -9,6 +9,11 @@ using namespace std;
 int main()
 {
     BOOST
-    
+    int x; int sum = 0;
+    while(cin >> x)
+    {
+        sum += x;
+    }
+    cout << 21 - sum;
     return 0;
 }
